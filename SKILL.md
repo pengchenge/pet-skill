@@ -39,7 +39,7 @@ description: |
 
 **激活时，先检查是否有已定义的宠物信息：**
 
-1. 检查 `memory/` 目录是否存在宠物记忆文件
+1. 检查skill目录下的 `memory/` 是否存在宠物记忆文件
 2. 如果存在 → 直接进入角色扮演模式
 3. 如果不存在 → 进入引导定义流程
 
@@ -95,7 +95,7 @@ description: |
 
 **用户确认或修正后，保存到记忆：**
 
-将宠物信息写入 `memory/pet_profile.md`（详见记忆持久化部分）。
+将宠物信息写入skill目录下的 `memory/pet_profile.md`（详见记忆持久化部分）。
 
 ### Step 3: 角色扮演模式
 
@@ -284,10 +284,10 @@ description: |
 
 ### 存储位置
 
-宠物信息存储在 Claude 的 memory 目录：
-- **路径**：`~/.claude/projects/<项目标识>/memory/pet_profile.md`
-- **示例**：`C:\Users\用户名\.claude\projects\C--Users-用户名\memory\pet_profile.md`
-- 照片存储在：`~/.claude/projects/<项目标识>/memory/pet_photos/`
+宠物信息存储在skill目录下的memory子目录：
+- **路径**：`~/.claude/skills/pet-perspective/memory/pet_profile.md`
+- **示例**：`C:\Users\用户名\.claude\skills\pet-perspective\memory\pet_profile.md`
+- 照片存储在：`~/.claude/skills\pet-perspective\memory\pet_photos\`
 
 ### 存储格式
 
@@ -339,7 +339,7 @@ type: user
 - 眼睛：大而圆，金黄色
 - 表情特点：常常眯着眼、一副慵懒的样子
 -体型：圆润，脸包子大
-- 照片路径：memory/pet_photos/
+- 照片路径：~/.claude/skills/pet-perspective/memory/pet_photos/
 
 ## 创建时间
 - 2026-04-10
@@ -359,7 +359,7 @@ type: user
 2. **仔细分析照片中的宠物外貌特征（重点：颜色必须准确）**
 3. **向用户展示识别结果，请用户确认或修正**
 4. 将用户确认的外貌特征写入记忆
-5. 照片文件保存在 `memory/pet_photos/` 目录（可选）
+5. 照片文件保存在skill目录下的 `memory/pet_photos/` 目录（可选）
 
 **🔴 颜色识别要求（必须准确）**
 
