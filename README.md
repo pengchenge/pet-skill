@@ -93,7 +93,7 @@
 ## 安装
 
 ```bash
-npx skills add alchaincyf/pet-skill
+npx skills add pengchenge/pet-skill
 ```
 
 然后在 Claude Code 里：
