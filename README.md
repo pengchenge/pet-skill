@@ -92,11 +92,23 @@
 
 ## 安装
 
+### 方式一：命令安装（推荐）
+
 适用于 **Claude Code** 和 **OpenClaw**：
 
 ```bash
 npx skills add pengchenge/pet-skill
 ```
+
+### 方式二：手动安装
+
+直接复制 SKILL.md 到 skills 目录：
+
+1. 下载 [SKILL.md](https://raw.githubusercontent.com/pengchenge/pet-skill/main/SKILL.md)
+2. 放到 Claude Code/OpenClaw 的 skills 目录：
+   - Claude Code: `~/.claude/skills/pet-perspective/SKILL.md`
+   - OpenClaw: `~/.openclaw/skills/pet-perspective/SKILL.md`
+3. 重启 Claude Code/OpenClaw
 
 安装后使用方式：
 
