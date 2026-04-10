@@ -92,11 +92,13 @@
 
 ## 安装
 
+适用于 **Claude Code** 和 **OpenClaw**：
+
 ```bash
 npx skills add pengchenge/pet-skill
 ```
 
-然后在 Claude Code 里：
+安装后使用方式：
 
 ```
 > pet                       # 首次使用，引导定义宠物
